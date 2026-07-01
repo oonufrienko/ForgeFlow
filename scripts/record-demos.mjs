@@ -41,16 +41,41 @@ const settle = async (page, ms = 1500) => {
 // it proves (replace these with the project's real flows). `proof` lists the ids.
 const CLIPS = [
   {
-    id: "01-home-loads",
-    title: "Home renders the primary content",
-    proof: "FR-1",
+    id: "forgeflow-product-tour",
+    title: "ForgeFlow procurement and manufacturing tour",
+    proof: "FR-1, FR-2, FR-8, FR-9, FR-10, FR-11, FR-13, FR-20, FR-29, FR-30, FR-35",
     run: async (page) => {
-      await page.goto(BASE_URL);
-      await settle(page);
-      assert(await page.getByRole("heading", { level: 1 }).isVisible(), "an <h1> is visible");
+      await page.goto(`${BASE_URL}/login`);
+      await settle(page, 2500);
+      assert(await page.getByRole("heading", { name: "Welcome to ForgeFlow" }).isVisible(), "login is visible");
+
+      await page.getByLabel("Username").fill("test");
+      await page.getByLabel("Password").fill("test");
+      await page.getByRole("button", { name: "Sign in securely" }).click();
+      await page.waitForURL("**/dashboard");
+      await settle(page, 6000);
+      assert(await page.getByRole("heading", { name: "Good morning, team" }).isVisible(), "dashboard is visible");
+      assert(await page.getByText("Raw materials", { exact: true }).isVisible(), "raw valuation is visible");
+
+      await page.getByRole("link", { name: "Procurement" }).click();
+      await page.waitForURL("**/procurement");
+      await settle(page, 6500);
+      assert(await page.getByRole("heading", { name: "Procurement engine" }).isVisible(), "procurement is visible");
+      assert(await page.getByText("Purchase order tracking").isVisible(), "order tracking is visible");
+
+      await page.getByRole("link", { name: "Manufacturing" }).click();
+      await page.waitForURL("**/manufacturing");
+      await settle(page, 6500);
+      assert(await page.getByRole("heading", { name: "Production control" }).isVisible(), "manufacturing is visible");
+      assert(await page.getByText("10-unit material preview").isVisible(), "BOM preview is visible");
+
+      await page.getByRole("link", { name: "Movement ledger" }).click();
+      await page.waitForURL("**/ledger");
+      await settle(page, 6500);
+      assert(await page.getByRole("heading", { name: "Movement ledger" }).isVisible(), "ledger is visible");
+      assert(await page.getByText("Production Consumption").first().isVisible(), "movement history is visible");
     },
   },
-  // … add one clip per capability; the security-negative clip asserts a redirect.
 ];
 
 async function ensureServer() {
