@@ -1,0 +1,11 @@
+{
+  "/_global-error/page": "/_global-error",
+  "/_not-found/page": "/_not-found",
+  "/dashboard/page": "/dashboard",
+  "/inventory/page": "/inventory",
+  "/ledger/page": "/ledger",
+  "/login/page": "/login",
+  "/manufacturing/page": "/manufacturing",
+  "/page": "/",
+  "/procurement/page": "/procurement"
+}

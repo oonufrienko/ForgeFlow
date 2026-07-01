@@ -75,7 +75,10 @@
         "openspec/specs/authentication/spec.md"
       ],
       "planned": true,
-      "tests": [],
+      "tests": [
+        "tests/auth.test.ts",
+        "tests/auth.test.ts"
+      ],
       "recordings": []
     },
     {
@@ -84,7 +87,9 @@
         "openspec/specs/authentication/spec.md"
       ],
       "planned": true,
-      "tests": [],
+      "tests": [
+        "tests/domain.test.ts"
+      ],
       "recordings": []
     },
     {
@@ -93,7 +98,9 @@
         "openspec/specs/authentication/spec.md"
       ],
       "planned": true,
-      "tests": [],
+      "tests": [
+        "tests/auth.test.ts"
+      ],
       "recordings": []
     },
     {
@@ -102,7 +109,9 @@
         "openspec/specs/authentication/spec.md"
       ],
       "planned": true,
-      "tests": [],
+      "tests": [
+        "tests/domain.test.ts"
+      ],
       "recordings": []
     },
     {
@@ -111,7 +120,9 @@
         "openspec/specs/authentication/spec.md"
       ],
       "planned": true,
-      "tests": [],
+      "tests": [
+        "tests/domain.test.ts"
+      ],
       "recordings": []
     },
     {
@@ -120,7 +131,9 @@
         "openspec/specs/authentication/spec.md"
       ],
       "planned": true,
-      "tests": [],
+      "tests": [
+        "tests/auth.test.ts"
+      ],
       "recordings": []
     },
     {
@@ -129,7 +142,9 @@
         "openspec/specs/authentication/spec.md"
       ],
       "planned": true,
-      "tests": [],
+      "tests": [
+        "tests/auth.test.ts"
+      ],
       "recordings": []
     },
     {
@@ -138,7 +153,10 @@
         "openspec/specs/dashboard/spec.md"
       ],
       "planned": true,
-      "tests": [],
+      "tests": [
+        "tests/domain.test.ts",
+        "tests/domain.test.ts"
+      ],
       "recordings": []
     },
     {
@@ -148,6 +166,7 @@
       ],
       "planned": true,
       "tests": [
+        "tests/domain.test.ts",
         "evals/cases/sample.eval.ts"
       ],
       "recordings": []
@@ -158,7 +177,9 @@
         "openspec/specs/dashboard/spec.md"
       ],
       "planned": true,
-      "tests": [],
+      "tests": [
+        "tests/domain.test.ts"
+      ],
       "recordings": []
     },
     {
@@ -167,7 +188,9 @@
         "openspec/specs/dashboard/spec.md"
       ],
       "planned": true,
-      "tests": [],
+      "tests": [
+        "tests/domain.test.ts"
+      ],
       "recordings": []
     },
     {
@@ -176,7 +199,9 @@
         "openspec/specs/dashboard/spec.md"
       ],
       "planned": true,
-      "tests": [],
+      "tests": [
+        "tests/domain.test.ts"
+      ],
       "recordings": []
     },
     {
@@ -185,7 +210,9 @@
         "openspec/specs/dashboard/spec.md"
       ],
       "planned": true,
-      "tests": [],
+      "tests": [
+        "tests/domain.test.ts"
+      ],
       "recordings": []
     },
     {
@@ -194,7 +221,9 @@
         "openspec/specs/master-data/spec.md"
       ],
       "planned": true,
-      "tests": [],
+      "tests": [
+        "tests/domain.test.ts"
+      ],
       "recordings": []
     },
     {
@@ -203,7 +232,9 @@
         "openspec/specs/master-data/spec.md"
       ],
       "planned": true,
-      "tests": [],
+      "tests": [
+        "tests/domain.test.ts"
+      ],
       "recordings": []
     },
     {
@@ -212,7 +243,9 @@
         "openspec/specs/master-data/spec.md"
       ],
       "planned": true,
-      "tests": [],
+      "tests": [
+        "tests/domain.test.ts"
+      ],
       "recordings": []
     },
     {
@@ -221,7 +254,9 @@
         "openspec/specs/master-data/spec.md"
       ],
       "planned": true,
-      "tests": [],
+      "tests": [
+        "tests/domain.test.ts"
+      ],
       "recordings": []
     },
     {
@@ -230,7 +265,9 @@
         "openspec/specs/procurement/spec.md"
       ],
       "planned": true,
-      "tests": [],
+      "tests": [
+        "tests/domain.test.ts"
+      ],
       "recordings": []
     },
     {
@@ -239,7 +276,9 @@
         "openspec/specs/procurement/spec.md"
       ],
       "planned": true,
-      "tests": [],
+      "tests": [
+        "tests/domain.test.ts"
+      ],
       "recordings": []
     },
     {
@@ -248,7 +287,9 @@
         "openspec/specs/procurement/spec.md"
       ],
       "planned": true,
-      "tests": [],
+      "tests": [
+        "tests/domain.test.ts"
+      ],
       "recordings": []
     },
     {
@@ -257,7 +298,10 @@
         "openspec/specs/procurement/spec.md"
       ],
       "planned": true,
-      "tests": [],
+      "tests": [
+        "tests/domain.test.ts",
+        "tests/domain.test.ts"
+      ],
       "recordings": []
     },
     {
@@ -266,7 +310,9 @@
         "openspec/specs/procurement/spec.md"
       ],
       "planned": true,
-      "tests": [],
+      "tests": [
+        "tests/domain.test.ts"
+      ],
       "recordings": []
     },
     {
@@ -275,7 +321,9 @@
         "openspec/specs/procurement/spec.md"
       ],
       "planned": true,
-      "tests": [],
+      "tests": [
+        "tests/domain.test.ts"
+      ],
       "recordings": []
     },
     {
@@ -284,7 +332,9 @@
         "openspec/specs/procurement/spec.md"
       ],
       "planned": true,
-      "tests": [],
+      "tests": [
+        "tests/domain.test.ts"
+      ],
       "recordings": []
     },
     {
@@ -293,7 +343,10 @@
         "openspec/specs/manufacturing/spec.md"
       ],
       "planned": true,
-      "tests": [],
+      "tests": [
+        "tests/domain.test.ts",
+        "tests/domain.test.ts"
+      ],
       "recordings": []
     },
     {
@@ -302,7 +355,9 @@
         "openspec/specs/manufacturing/spec.md"
       ],
       "planned": true,
-      "tests": [],
+      "tests": [
+        "tests/domain.test.ts"
+      ],
       "recordings": []
     },
     {
@@ -311,7 +366,9 @@
         "openspec/specs/manufacturing/spec.md"
       ],
       "planned": true,
-      "tests": [],
+      "tests": [
+        "tests/domain.test.ts"
+      ],
       "recordings": []
     },
     {
@@ -320,7 +377,9 @@
         "openspec/specs/manufacturing/spec.md"
       ],
       "planned": true,
-      "tests": [],
+      "tests": [
+        "tests/domain.test.ts"
+      ],
       "recordings": []
     },
     {
@@ -329,7 +388,9 @@
         "openspec/specs/manufacturing/spec.md"
       ],
       "planned": true,
-      "tests": [],
+      "tests": [
+        "tests/domain.test.ts"
+      ],
       "recordings": []
     },
     {
@@ -338,7 +399,9 @@
         "openspec/specs/manufacturing/spec.md"
       ],
       "planned": true,
-      "tests": [],
+      "tests": [
+        "tests/domain.test.ts"
+      ],
       "recordings": []
     },
     {
@@ -347,7 +410,9 @@
         "openspec/specs/ledger-persistence/spec.md"
       ],
       "planned": true,
-      "tests": [],
+      "tests": [
+        "tests/domain.test.ts"
+      ],
       "recordings": []
     },
     {
@@ -356,7 +421,9 @@
         "openspec/specs/ledger-persistence/spec.md"
       ],
       "planned": true,
-      "tests": [],
+      "tests": [
+        "tests/domain.test.ts"
+      ],
       "recordings": []
     },
     {
@@ -365,7 +432,9 @@
         "openspec/specs/ledger-persistence/spec.md"
       ],
       "planned": true,
-      "tests": [],
+      "tests": [
+        "tests/domain.test.ts"
+      ],
       "recordings": []
     },
     {
@@ -374,7 +443,9 @@
         "openspec/specs/ledger-persistence/spec.md"
       ],
       "planned": true,
-      "tests": [],
+      "tests": [
+        "tests/domain.test.ts"
+      ],
       "recordings": []
     },
     {
@@ -383,148 +454,14 @@
         "openspec/specs/ledger-persistence/spec.md"
       ],
       "planned": true,
-      "tests": [],
+      "tests": [
+        "tests/domain.test.ts"
+      ],
       "recordings": []
     }
   ],
   "failures": [],
   "warnings": [
-    {
-      "check": "test-trace",
-      "msg": "FR-1 has no test annotated \"@trace FR-1\""
-    },
-    {
-      "check": "test-trace",
-      "msg": "FR-2 has no test annotated \"@trace FR-2\""
-    },
-    {
-      "check": "test-trace",
-      "msg": "FR-3 has no test annotated \"@trace FR-3\""
-    },
-    {
-      "check": "test-trace",
-      "msg": "FR-4 has no test annotated \"@trace FR-4\""
-    },
-    {
-      "check": "test-trace",
-      "msg": "FR-5 has no test annotated \"@trace FR-5\""
-    },
-    {
-      "check": "test-trace",
-      "msg": "FR-6 has no test annotated \"@trace FR-6\""
-    },
-    {
-      "check": "test-trace",
-      "msg": "FR-7 has no test annotated \"@trace FR-7\""
-    },
-    {
-      "check": "test-trace",
-      "msg": "FR-8 has no test annotated \"@trace FR-8\""
-    },
-    {
-      "check": "test-trace",
-      "msg": "FR-10 has no test annotated \"@trace FR-10\""
-    },
-    {
-      "check": "test-trace",
-      "msg": "FR-11 has no test annotated \"@trace FR-11\""
-    },
-    {
-      "check": "test-trace",
-      "msg": "FR-12 has no test annotated \"@trace FR-12\""
-    },
-    {
-      "check": "test-trace",
-      "msg": "FR-13 has no test annotated \"@trace FR-13\""
-    },
-    {
-      "check": "test-trace",
-      "msg": "FR-14 has no test annotated \"@trace FR-14\""
-    },
-    {
-      "check": "test-trace",
-      "msg": "FR-15 has no test annotated \"@trace FR-15\""
-    },
-    {
-      "check": "test-trace",
-      "msg": "FR-16 has no test annotated \"@trace FR-16\""
-    },
-    {
-      "check": "test-trace",
-      "msg": "FR-17 has no test annotated \"@trace FR-17\""
-    },
-    {
-      "check": "test-trace",
-      "msg": "FR-18 has no test annotated \"@trace FR-18\""
-    },
-    {
-      "check": "test-trace",
-      "msg": "FR-19 has no test annotated \"@trace FR-19\""
-    },
-    {
-      "check": "test-trace",
-      "msg": "FR-20 has no test annotated \"@trace FR-20\""
-    },
-    {
-      "check": "test-trace",
-      "msg": "FR-21 has no test annotated \"@trace FR-21\""
-    },
-    {
-      "check": "test-trace",
-      "msg": "FR-22 has no test annotated \"@trace FR-22\""
-    },
-    {
-      "check": "test-trace",
-      "msg": "FR-23 has no test annotated \"@trace FR-23\""
-    },
-    {
-      "check": "test-trace",
-      "msg": "FR-24 has no test annotated \"@trace FR-24\""
-    },
-    {
-      "check": "test-trace",
-      "msg": "FR-29 has no test annotated \"@trace FR-29\""
-    },
-    {
-      "check": "test-trace",
-      "msg": "FR-30 has no test annotated \"@trace FR-30\""
-    },
-    {
-      "check": "test-trace",
-      "msg": "FR-31 has no test annotated \"@trace FR-31\""
-    },
-    {
-      "check": "test-trace",
-      "msg": "FR-32 has no test annotated \"@trace FR-32\""
-    },
-    {
-      "check": "test-trace",
-      "msg": "FR-33 has no test annotated \"@trace FR-33\""
-    },
-    {
-      "check": "test-trace",
-      "msg": "FR-34 has no test annotated \"@trace FR-34\""
-    },
-    {
-      "check": "test-trace",
-      "msg": "FR-35 has no test annotated \"@trace FR-35\""
-    },
-    {
-      "check": "test-trace",
-      "msg": "FR-36 has no test annotated \"@trace FR-36\""
-    },
-    {
-      "check": "test-trace",
-      "msg": "FR-37 has no test annotated \"@trace FR-37\""
-    },
-    {
-      "check": "test-trace",
-      "msg": "FR-38 has no test annotated \"@trace FR-38\""
-    },
-    {
-      "check": "test-trace",
-      "msg": "FR-39 has no test annotated \"@trace FR-39\""
-    },
     {
       "check": "recording-evidence",
       "msg": "FR-1 is not referenced by any recording manifest under docs/qa/"
