@@ -179,8 +179,7 @@
         "evals/cases/sample.eval.ts"
       ],
       "recordings": [
-        "docs/qa/demo-recordings/manifest.json",
-        "docs/qa/extended-demo-recordings/manifest.json"
+        "docs/qa/demo-recordings/manifest.json"
       ]
     },
     {
@@ -193,8 +192,7 @@
         "tests/domain.test.ts"
       ],
       "recordings": [
-        "docs/qa/demo-recordings/manifest.json",
-        "docs/qa/extended-demo-recordings/manifest.json"
+        "docs/qa/demo-recordings/manifest.json"
       ]
     },
     {
@@ -245,9 +243,7 @@
       "tests": [
         "tests/domain.test.ts"
       ],
-      "recordings": [
-        "docs/qa/extended-demo-recordings/manifest.json"
-      ]
+      "recordings": []
     },
     {
       "id": "FR-15",
@@ -343,7 +339,9 @@
       "tests": [
         "tests/domain.test.ts"
       ],
-      "recordings": []
+      "recordings": [
+        "docs/qa/extended-demo-recordings/manifest.json"
+      ]
     },
     {
       "id": "FR-23",
@@ -354,7 +352,9 @@
       "tests": [
         "tests/domain.test.ts"
       ],
-      "recordings": []
+      "recordings": [
+        "docs/qa/extended-demo-recordings/manifest.json"
+      ]
     },
     {
       "id": "FR-24",
@@ -365,7 +365,9 @@
       "tests": [
         "tests/domain.test.ts"
       ],
-      "recordings": []
+      "recordings": [
+        "docs/qa/extended-demo-recordings/manifest.json"
+      ]
     },
     {
       "id": "FR-29",
@@ -378,8 +380,7 @@
         "tests/domain.test.ts"
       ],
       "recordings": [
-        "docs/qa/demo-recordings/manifest.json",
-        "docs/qa/extended-demo-recordings/manifest.json"
+        "docs/qa/demo-recordings/manifest.json"
       ]
     },
     {
@@ -392,8 +393,7 @@
         "tests/domain.test.ts"
       ],
       "recordings": [
-        "docs/qa/demo-recordings/manifest.json",
-        "docs/qa/extended-demo-recordings/manifest.json"
+        "docs/qa/demo-recordings/manifest.json"
       ]
     },
     {
@@ -527,6 +527,10 @@
     },
     {
       "check": "recording-evidence",
+      "msg": "FR-14 is not referenced by any recording manifest under docs/qa/"
+    },
+    {
+      "check": "recording-evidence",
       "msg": "FR-15 is not referenced by any recording manifest under docs/qa/"
     },
     {
@@ -540,18 +544,6 @@
     {
       "check": "recording-evidence",
       "msg": "FR-21 is not referenced by any recording manifest under docs/qa/"
-    },
-    {
-      "check": "recording-evidence",
-      "msg": "FR-22 is not referenced by any recording manifest under docs/qa/"
-    },
-    {
-      "check": "recording-evidence",
-      "msg": "FR-23 is not referenced by any recording manifest under docs/qa/"
-    },
-    {
-      "check": "recording-evidence",
-      "msg": "FR-24 is not referenced by any recording manifest under docs/qa/"
     },
     {
       "check": "recording-evidence",

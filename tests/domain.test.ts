@@ -11,8 +11,8 @@ describe("dashboard calculations", () => {
     expect(metrics.rawValue).toBe(3216);
     expect(metrics.finishedValue).toBe(3600);
     expect(metrics.pendingOrdersValue).toBe(1250);
-    expect(stockAlert(45, 60)).toBe("Low");
-    expect(stockAlert(0, 60)).toBe("Critical");
+    expect(stockAlert(45, 60)).toBe("Низький запас");
+    expect(stockAlert(0, 60)).toBe("Критичний запас");
   });
 });
 
@@ -20,7 +20,7 @@ describe("procurement", () => {
   // @trace FR-21 FR-22 FR-23 FR-24 FR-38
   it("receives a partial order without mutating input", () => {
     const next = receiveOrder(seedData, "po_502", 20, "usr_001");
-    expect(next.purchaseOrders[1].status).toBe("Partially Received");
+    expect(next.purchaseOrders[1].status).toBe("Частково отримано");
     expect(next.purchaseOrders[1].items[0].quantityReceived).toBe(20);
     expect(next.rawMaterials[1].quantityInStock).toBe(65);
     expect(seedData.rawMaterials[1].quantityInStock).toBe(45);
@@ -31,12 +31,12 @@ describe("procurement", () => {
   // @trace FR-20
   it("creates a calculated order with a unique display number", () => {
     const next = createOrder(seedData, "sup_101", "mat_201", 12, 3.5);
-    expect(next.purchaseOrders.at(-1)).toMatchObject({ status: "Ordered", totalCost: 42 });
+    expect(next.purchaseOrders.at(-1)).toMatchObject({ status: "Замовлено", totalCost: 42 });
     expect(next.purchaseOrders.at(-1)?.poNumber).not.toBe(seedData.purchaseOrders.at(-1)?.poNumber);
   });
 
   it("rejects receiving beyond the remaining quantity", () => {
-    expect(() => receiveOrder(seedData, "po_502", 51, "usr_001")).toThrow(/remaining/i);
+    expect(() => receiveOrder(seedData, "po_502", 51, "usr_001")).toThrow(/залишок/i);
   });
 });
 
@@ -44,7 +44,7 @@ describe("manufacturing", () => {
   // @trace FR-29 FR-30 FR-31 FR-32 FR-33 FR-34
   it("previews BOM quantities and reports quality-held inputs", () => {
     expect(productionPreview(seedData, "prd_301", 10)[0].required).toBe(15);
-    expect(validateProduction(seedData, "prd_301", 10)).toContain("quality inspection");
+    expect(validateProduction(seedData, "prd_301", 10)).toContain("на контролі якості");
   });
 
   it("converts inventory and records movements when every input is usable", () => {
@@ -53,7 +53,7 @@ describe("manufacturing", () => {
     const next = executeProduction(ready, "prd_301", 10, "usr_001");
     expect(next.rawMaterials[0].quantityInStock).toBe(135);
     expect(next.finishedGoods[0].quantityInStock).toBe(90);
-    expect(next.stockMovements.slice(-3).map((item) => item.reason)).toEqual(["Production Consumption", "Production Consumption", "Work Order Completion"]);
+    expect(next.stockMovements.slice(-3).map((item) => item.reason)).toEqual(["Списання у виробництво", "Списання у виробництво", "Завершення виробничого замовлення"]);
   });
 });
 
