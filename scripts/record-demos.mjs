@@ -41,9 +41,9 @@ const settle = async (page, ms = 1500) => {
 // it proves (replace these with the project's real flows). `proof` lists the ids.
 const CLIPS = [
   {
-    id: "forgeflow-product-tour",
-    title: "ForgeFlow procurement and manufacturing tour",
-    proof: "FR-1, FR-2, FR-8, FR-9, FR-10, FR-11, FR-13, FR-20, FR-29, FR-30, FR-35",
+    id: "forgeflow-extended-table-tour",
+    title: "ForgeFlow extended tour with live table additions",
+    proof: "FR-1, FR-2, FR-8, FR-9, FR-10, FR-11, FR-13, FR-14, FR-18, FR-19, FR-20, FR-29, FR-30, FR-35",
     run: async (page) => {
       await page.goto(`${BASE_URL}/login`);
       await settle(page, 2500);
@@ -53,25 +53,52 @@ const CLIPS = [
       await page.getByLabel("Password").fill("test");
       await page.getByRole("button", { name: "Sign in securely" }).click();
       await page.waitForURL("**/dashboard");
-      await settle(page, 6000);
+      await settle(page, 9500);
       assert(await page.getByRole("heading", { name: "Good morning, team" }).isVisible(), "dashboard is visible");
       assert(await page.getByText("Raw materials", { exact: true }).isVisible(), "raw valuation is visible");
 
+      await page.getByRole("link", { name: "Inventory", exact: true }).click();
+      await page.waitForURL("**/inventory");
+      await settle(page, 4500);
+      assert(await page.getByRole("heading", { name: "Inventory & suppliers" }).isVisible(), "inventory is visible");
+
+      await page.getByLabel("Company").fill("Northstar Demo Metals");
+      await page.getByLabel("Contact").fill("Marta Demo");
+      await page.getByLabel("Email").fill("orders@northstar.demo");
+      await page.getByLabel("Phone").fill("+1-555-010-2040");
+      await page.getByLabel("Lead time (days)").fill("4");
+      await page.getByLabel("Rating").fill("4.9");
+      await page.getByRole("button", { name: "Add supplier" }).click();
+      await page.waitForURL("**/inventory?success=**");
+      await settle(page, 9500);
+      assert(await page.getByText("Northstar Demo Metals").isVisible(), "new supplier appears in the table");
+
       await page.getByRole("link", { name: "Procurement" }).click();
       await page.waitForURL("**/procurement");
-      await settle(page, 6500);
+      await settle(page, 4000);
       assert(await page.getByRole("heading", { name: "Procurement engine" }).isVisible(), "procurement is visible");
       assert(await page.getByText("Purchase order tracking").isVisible(), "order tracking is visible");
 
+      await page.getByLabel("Supplier").selectOption({ label: "Northstar Demo Metals" });
+      await page.getByLabel("Material").selectOption("mat_201");
+      await page.getByLabel("Quantity", { exact: true }).fill("24");
+      await page.getByLabel("Unit price").fill("12.50");
+      await page.getByRole("button", { name: "Issue purchase order" }).click();
+      await page.waitForURL("**/procurement?success=**");
+      await settle(page, 9500);
+      const newOrderRow = page.getByRole("row").filter({ hasText: "Northstar Demo Metals" });
+      assert(await newOrderRow.isVisible(), "new purchase order appears in the tracking table");
+      assert(await newOrderRow.getByText("$300.00").isVisible(), "new order total is visible");
+
       await page.getByRole("link", { name: "Manufacturing" }).click();
       await page.waitForURL("**/manufacturing");
-      await settle(page, 6500);
+      await settle(page, 8500);
       assert(await page.getByRole("heading", { name: "Production control" }).isVisible(), "manufacturing is visible");
       assert(await page.getByText("10-unit material preview").isVisible(), "BOM preview is visible");
 
       await page.getByRole("link", { name: "Movement ledger" }).click();
       await page.waitForURL("**/ledger");
-      await settle(page, 6500);
+      await settle(page, 5500);
       assert(await page.getByRole("heading", { name: "Movement ledger" }).isVisible(), "ledger is visible");
       assert(await page.getByText("Production Consumption").first().isVisible(), "movement history is visible");
     },

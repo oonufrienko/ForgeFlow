@@ -80,7 +80,8 @@
         "tests/auth.test.ts"
       ],
       "recordings": [
-        "docs/qa/demo-recordings/manifest.json"
+        "docs/qa/demo-recordings/manifest.json",
+        "docs/qa/extended-demo-recordings/manifest.json"
       ]
     },
     {
@@ -93,7 +94,8 @@
         "tests/domain.test.ts"
       ],
       "recordings": [
-        "docs/qa/demo-recordings/manifest.json"
+        "docs/qa/demo-recordings/manifest.json",
+        "docs/qa/extended-demo-recordings/manifest.json"
       ]
     },
     {
@@ -162,7 +164,8 @@
         "tests/domain.test.ts"
       ],
       "recordings": [
-        "docs/qa/demo-recordings/manifest.json"
+        "docs/qa/demo-recordings/manifest.json",
+        "docs/qa/extended-demo-recordings/manifest.json"
       ]
     },
     {
@@ -176,7 +179,8 @@
         "evals/cases/sample.eval.ts"
       ],
       "recordings": [
-        "docs/qa/demo-recordings/manifest.json"
+        "docs/qa/demo-recordings/manifest.json",
+        "docs/qa/extended-demo-recordings/manifest.json"
       ]
     },
     {
@@ -189,7 +193,8 @@
         "tests/domain.test.ts"
       ],
       "recordings": [
-        "docs/qa/demo-recordings/manifest.json"
+        "docs/qa/demo-recordings/manifest.json",
+        "docs/qa/extended-demo-recordings/manifest.json"
       ]
     },
     {
@@ -202,7 +207,8 @@
         "tests/domain.test.ts"
       ],
       "recordings": [
-        "docs/qa/demo-recordings/manifest.json"
+        "docs/qa/demo-recordings/manifest.json",
+        "docs/qa/extended-demo-recordings/manifest.json"
       ]
     },
     {
@@ -226,7 +232,8 @@
         "tests/domain.test.ts"
       ],
       "recordings": [
-        "docs/qa/demo-recordings/manifest.json"
+        "docs/qa/demo-recordings/manifest.json",
+        "docs/qa/extended-demo-recordings/manifest.json"
       ]
     },
     {
@@ -238,7 +245,9 @@
       "tests": [
         "tests/domain.test.ts"
       ],
-      "recordings": []
+      "recordings": [
+        "docs/qa/extended-demo-recordings/manifest.json"
+      ]
     },
     {
       "id": "FR-15",
@@ -282,7 +291,9 @@
       "tests": [
         "tests/domain.test.ts"
       ],
-      "recordings": []
+      "recordings": [
+        "docs/qa/extended-demo-recordings/manifest.json"
+      ]
     },
     {
       "id": "FR-19",
@@ -293,7 +304,9 @@
       "tests": [
         "tests/domain.test.ts"
       ],
-      "recordings": []
+      "recordings": [
+        "docs/qa/extended-demo-recordings/manifest.json"
+      ]
     },
     {
       "id": "FR-20",
@@ -305,7 +318,8 @@
         "tests/domain.test.ts"
       ],
       "recordings": [
-        "docs/qa/demo-recordings/manifest.json"
+        "docs/qa/demo-recordings/manifest.json",
+        "docs/qa/extended-demo-recordings/manifest.json"
       ]
     },
     {
@@ -364,7 +378,8 @@
         "tests/domain.test.ts"
       ],
       "recordings": [
-        "docs/qa/demo-recordings/manifest.json"
+        "docs/qa/demo-recordings/manifest.json",
+        "docs/qa/extended-demo-recordings/manifest.json"
       ]
     },
     {
@@ -377,7 +392,8 @@
         "tests/domain.test.ts"
       ],
       "recordings": [
-        "docs/qa/demo-recordings/manifest.json"
+        "docs/qa/demo-recordings/manifest.json",
+        "docs/qa/extended-demo-recordings/manifest.json"
       ]
     },
     {
@@ -434,7 +450,8 @@
         "tests/domain.test.ts"
       ],
       "recordings": [
-        "docs/qa/demo-recordings/manifest.json"
+        "docs/qa/demo-recordings/manifest.json",
+        "docs/qa/extended-demo-recordings/manifest.json"
       ]
     },
     {
@@ -510,10 +527,6 @@
     },
     {
       "check": "recording-evidence",
-      "msg": "FR-14 is not referenced by any recording manifest under docs/qa/"
-    },
-    {
-      "check": "recording-evidence",
       "msg": "FR-15 is not referenced by any recording manifest under docs/qa/"
     },
     {
@@ -523,14 +536,6 @@
     {
       "check": "recording-evidence",
       "msg": "FR-17 is not referenced by any recording manifest under docs/qa/"
-    },
-    {
-      "check": "recording-evidence",
-      "msg": "FR-18 is not referenced by any recording manifest under docs/qa/"
-    },
-    {
-      "check": "recording-evidence",
-      "msg": "FR-19 is not referenced by any recording manifest under docs/qa/"
     },
     {
       "check": "recording-evidence",
