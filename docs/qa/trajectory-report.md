@@ -6,7 +6,7 @@ It does NOT verify test-first ordering or test integrity (not derivable from
 one-commit-per-slice history) — those are graded by the trajectory-eval workflow.
 
 Scope: 7 archived slice(s).
-Result: PASS, 1 warning(s)
+Result: PASS
 
 | Slice | Review evidence | Trailer commits | design+tasks | lib domains touched |
 |---|---|---|---|---|
@@ -16,7 +16,7 @@ Result: PASS, 1 warning(s)
 | 2026-07-02-add-manufacturing | clean | 1 | yes | - |
 | 2026-07-02-add-master-data | clean | 1 | yes | - |
 | 2026-07-02-add-procurement-receiving | clean | 1 | yes | - |
-| 2026-07-02-switch-uah-active-navigation | clean | **0** | yes | - |
+| 2026-07-02-switch-uah-active-navigation | clean | 1 | yes | - |
 
 ## Cross-slice module overlap
 
@@ -28,4 +28,4 @@ None.
 
 ## Warnings
 
-- **trailer**: 2026-07-02-switch-uah-active-navigation: no commit carries a "Slice: switch-uah-active-navigation" trailer
+None.
