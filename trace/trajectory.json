@@ -42,9 +42,21 @@
       "trailerCommits": 1,
       "libDomains": [],
       "processComplete": true
+    },
+    {
+      "slice": "2026-07-02-switch-uah-active-navigation",
+      "reviewEvidence": "clean",
+      "trailerCommits": 0,
+      "libDomains": [],
+      "processComplete": true
     }
   ],
   "overlaps": [],
   "failures": [],
-  "warnings": []
+  "warnings": [
+    {
+      "check": "trailer",
+      "msg": "2026-07-02-switch-uah-active-navigation: no commit carries a \"Slice: switch-uah-active-navigation\" trailer"
+    }
+  ]
 }

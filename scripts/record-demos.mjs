@@ -58,12 +58,17 @@ const CLIPS = [
       await settle(page, 5000);
       assert(await page.getByRole("heading", { name: "Доброго дня, командо" }).isVisible(), "dashboard is visible");
       assert(await page.getByText("Сировина", { exact: true }).isVisible(), "raw valuation is visible");
+      assert(await page.getByRole("link", { name: "Огляд" }).getAttribute("aria-current") === "page", "dashboard navigation is persistently active");
+      const dashboardText = await page.locator("body").innerText();
+      assert(dashboardText.includes("грн"), "dashboard values use the UAH suffix");
+      assert(!dashboardText.includes("$") && !dashboardText.includes("USD"), "dashboard contains no dollar sign or USD code");
 
       await page.getByRole("link", { name: "Закупівлі" }).click();
       await page.waitForURL("**/procurement");
       await settle(page, 3000);
       assert(await page.getByRole("heading", { name: "Керування закупівлями" }).isVisible(), "procurement is visible");
       assert(await page.getByText("Відстеження закупівель").isVisible(), "order tracking is visible");
+      assert(await page.getByRole("link", { name: "Закупівлі" }).getAttribute("aria-current") === "page", "procurement navigation is persistently active");
 
       await page.getByLabel("Постачальник").selectOption("sup_101");
       await page.getByLabel("Матеріал").selectOption("mat_201");
@@ -75,7 +80,7 @@ const CLIPS = [
       await settle(page, 7000);
       const newOrderRow = page.getByRole("row").filter({ hasText: "Сталь-Пром Україна" }).filter({ hasText: "0 / 24" }).first();
       assert(await newOrderRow.isVisible(), "new purchase order appears in the tracking table");
-      assert(await newOrderRow.getByText(/300,00/).isVisible(), "new order total is visible");
+      assert(await newOrderRow.getByText(/300,00 грн/).isVisible(), "new order total is visible in UAH");
       assert(await newOrderRow.getByText("Замовлено", { exact: true }).isVisible(), "new order has ordered status");
       const orderNumber = await newOrderRow.locator("td").first().locator("strong").textContent();
       assert(Boolean(orderNumber), "new order number is visible");

@@ -1,18 +1,17 @@
 import Link from "next/link";
 import { Shell } from "@/components/shell";
 import { dashboardMetrics, stockAlert, stockAlertClass } from "@/lib/dashboard";
+import { formatMoney } from "@/lib/format";
 import { readDatabase } from "@/lib/repository";
-
-const money = new Intl.NumberFormat("uk-UA", { style: "currency", currency: "USD" });
 
 export default async function Dashboard() {
   const data = await readDatabase();
   const metrics = dashboardMetrics(data);
   return <Shell eyebrow="Операційний пульс" title="Доброго дня, командо">
     <section className="metrics">
-      <article><span>Сировина</span><strong>{money.format(metrics.rawValue)}</strong><small>Поточна вартість на складі</small></article>
-      <article><span>Готова продукція</span><strong>{money.format(metrics.finishedValue)}</strong><small>Запаси, готові до продажу</small></article>
-      <article><span>Незавершені замовлення</span><strong>{money.format(metrics.pendingOrdersValue)}</strong><small>Вартість відкритих закупівель</small></article>
+      <article><span>Сировина</span><strong>{formatMoney(metrics.rawValue)}</strong><small>Поточна вартість на складі</small></article>
+      <article><span>Готова продукція</span><strong>{formatMoney(metrics.finishedValue)}</strong><small>Запаси, готові до продажу</small></article>
+      <article><span>Незавершені замовлення</span><strong>{formatMoney(metrics.pendingOrdersValue)}</strong><small>Вартість відкритих закупівель</small></article>
     </section>
     <section className="split">
       <div className="panel"><div className="panel-head"><div><p className="eyebrow">Потребує уваги</p><h2>Контроль поповнення запасів</h2></div><Link href="/inventory">Переглянути запаси →</Link></div>

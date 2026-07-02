@@ -170,7 +170,9 @@
       "planned": true,
       "tests": [
         "tests/dashboard.test.ts",
-        "tests/dashboard.test.ts"
+        "tests/dashboard.test.ts",
+        "tests/format.test.ts",
+        "tests/format.test.ts"
       ],
       "recordings": [
         "docs/qa/demo-recordings/manifest.json",
@@ -184,7 +186,8 @@
       ],
       "planned": true,
       "tests": [
-        "tests/dashboard.test.ts"
+        "tests/dashboard.test.ts",
+        "tests/format.test.ts"
       ],
       "recordings": [
         "docs/qa/demo-recordings/manifest.json"
@@ -197,7 +200,8 @@
       ],
       "planned": true,
       "tests": [
-        "tests/dashboard.test.ts"
+        "tests/dashboard.test.ts",
+        "tests/format.test.ts"
       ],
       "recordings": [
         "docs/qa/demo-recordings/manifest.json"
@@ -242,6 +246,9 @@
       ],
       "planned": true,
       "tests": [
+        "tests/navigation.test.tsx",
+        "tests/navigation.test.tsx",
+        "tests/navigation.test.tsx",
         "tests/shell.test.tsx",
         "tests/shell.test.tsx"
       ],
@@ -285,6 +292,7 @@
       ],
       "planned": true,
       "tests": [
+        "tests/format.test.ts",
         "tests/master-data.test.ts",
         "tests/master-data.test.ts"
       ],
@@ -339,6 +347,7 @@
       ],
       "planned": true,
       "tests": [
+        "tests/format.test.ts",
         "tests/procurement.test.ts"
       ],
       "recordings": [

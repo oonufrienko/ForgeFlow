@@ -4,13 +4,14 @@ Date: 2026-07-02
 
 ## Passed evidence
 
-- `npm run test:run` — 10 files, 48 tests pass across all six capabilities plus repository integration and executable eval producers.
+- `npm run test:run` — 12 files, 54 tests pass across all six capabilities, UAH formatting, active navigation, repository integration, and executable eval producers.
 - `npm run test:integration` — isolated JSON repository reads, FIFO concurrent writes, and failed-mutation rollback pass.
-- `npm run test:coverage` — 99.49% statements, 97.72% branches, 100% functions, and 100% lines.
+- `npm run test:coverage` — 99.51% statements, 97.87% branches, 100% functions, and 100% lines.
 - `npm run check:eval` — decision-clarity, error-clarity, and status-clarity remain at the committed baseline of 95.
 - `npx openspec validate --all --strict` — all six baseline specifications pass.
 - `node scripts/check-traceability.mjs` — 35 MVP FRs checked with no failures and no missing-test warnings.
 - Extended Playwright proof — 56.92-second create → receive → inventory → ledger flow asserted and visually verified.
+- Updated Playwright proof — 56.84 seconds; asserts `грн`, absence of `$`/`USD`, and persistent active navigation on dashboard and procurement. Final still visibly confirms the active ledger item.
 
 ## Agentic-engineering evidence
 

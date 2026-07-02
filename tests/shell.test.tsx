@@ -2,6 +2,7 @@ import { describe, expect, it, vi } from "vitest";
 import { renderToStaticMarkup } from "react-dom/server";
 
 vi.mock("server-only", () => ({}));
+vi.mock("next/navigation", () => ({ usePathname: () => "/dashboard" }));
 vi.mock("@/lib/auth/session", () => ({
   requireSession: async () => ({ userId: "usr_001", username: "test", fullName: "Адміністратор тестової системи", role: "Адміністратор" }),
 }));

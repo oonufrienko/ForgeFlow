@@ -7,11 +7,12 @@
 ## Completed
 
 - Project Factory loop, hooks, CI, numbered requirements, six baseline specs, and the approved capability plan are installed.
-- Six retrospective archived change records now connect each delivered slice to proposal, design, completed tasks, delta requirements, and review limitations.
+- Six retrospective archived change records connect the delivered MVP slices to proposal, design, completed tasks, delta requirements, and review limitations. A seventh archived UI change records the observed test-first UAH and active-navigation refinement.
 - The test suite is split by capability: authentication, sessions, shell, dashboard, master data, procurement, manufacturing, ledger, repository integration, and output evals.
-- Ten test files execute 48 tests; every MVP FR now has an explicit `@trace` test annotation and traceability reports no missing-test warnings.
+- Twelve test files execute 54 tests; every MVP FR now has an explicit `@trace` test annotation and traceability reports no missing-test warnings.
 - Six executable ForgeFlow eval cases replace the placeholder sample and establish a non-skipping three-dimension ratchet baseline.
-- Coverage ratchets at 100% lines, 99.49% statements, 100% functions, and 97.72% branches.
+- Coverage ratchets at 100% lines, 99.51% statements, 100% functions, and 97.87% branches.
+- User-visible money now uses the `грн` suffix, and the current navigation destination remains highlighted with `aria-current="page"`.
 - Ukrainian demo recordings include the 56.92-second procurement and receiving proof with asserted and visually inspected evidence.
 
 ## Next task
