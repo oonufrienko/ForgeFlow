@@ -1,7 +1,8 @@
 import { defineConfig } from "vitest/config";
+import { fileURLToPath } from "node:url";
 
 export default defineConfig({
   test: { environment: "node", coverage: { provider: "v8", reporter: ["text", "json-summary"] } },
-  resolve: { alias: { "@": new URL(".", import.meta.url).pathname } },
+  resolve: { alias: { "@": fileURLToPath(new URL(".", import.meta.url)) } },
 });
 
