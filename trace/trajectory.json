@@ -32,7 +32,7 @@
     {
       "slice": "2026-07-02-add-master-data",
       "reviewEvidence": "clean",
-      "trailerCommits": 0,
+      "trailerCommits": 1,
       "libDomains": [],
       "processComplete": true
     },
@@ -54,10 +54,6 @@
     {
       "check": "trailer",
       "msg": "2026-07-02-add-manufacturing: no commit carries a \"Slice: add-manufacturing\" trailer"
-    },
-    {
-      "check": "trailer",
-      "msg": "2026-07-02-add-master-data: no commit carries a \"Slice: add-master-data\" trailer"
     },
     {
       "check": "trailer",
