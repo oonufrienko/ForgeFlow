@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { dashboardMetrics, stockAlert } from "@/lib/dashboard";
+import { dashboardMetrics, stockAlert, stockAlertClass } from "@/lib/dashboard";
 import { executeProduction, productionPreview, validateProduction } from "@/lib/manufacturing";
 import { createOrder, receiveOrder } from "@/lib/procurement";
 import { seedData } from "@/lib/seed";
@@ -13,6 +13,9 @@ describe("dashboard calculations", () => {
     expect(metrics.pendingOrdersValue).toBe(1250);
     expect(stockAlert(45, 60)).toBe("Низький запас");
     expect(stockAlert(0, 60)).toBe("Критичний запас");
+    expect(stockAlertClass(stockAlert(100, 60))).toBe("healthy");
+    expect(stockAlertClass(stockAlert(45, 60))).toBe("low");
+    expect(stockAlertClass(stockAlert(0, 60))).toBe("critical");
   });
 });
 
