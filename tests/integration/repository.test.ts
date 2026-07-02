@@ -7,12 +7,8 @@ import { seedData } from "@/lib/seed";
 vi.mock("server-only", () => ({}));
 
 const files = {
-  users: "users.json",
-  suppliers: "suppliers.json",
-  rawMaterials: "raw_materials.json",
-  finishedGoods: "finished_goods.json",
-  boms: "bom.json",
-  purchaseOrders: "purchase_orders.json",
+  users: "users.json", suppliers: "suppliers.json", rawMaterials: "raw_materials.json",
+  finishedGoods: "finished_goods.json", boms: "bom.json", purchaseOrders: "purchase_orders.json",
   stockMovements: "stock_movements.json",
 } as const;
 
@@ -38,6 +34,15 @@ describe("JSON repository", () => {
     expect(data.users).toHaveLength(2);
     expect(data.boms[0].bomId).toBe("bom_401");
     expect(data.stockMovements).toHaveLength(3);
+  });
+
+  // @trace FR-37 FR-38
+  it("persists a transaction across all database files", async () => {
+    const { readDatabase, transaction } = await import("@/lib/repository");
+    await transaction((data) => { data.suppliers[0].rating = 4.75; return data; });
+    const persisted = await readDatabase();
+    expect(persisted.suppliers[0].rating).toBe(4.75);
+    expect(JSON.parse(await readFile(path.join(dataDir, files.suppliers), "utf8"))).toEqual(persisted.suppliers);
   });
 
   // @trace FR-37 FR-38

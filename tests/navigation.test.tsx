@@ -22,6 +22,12 @@ describe("primary navigation state", () => {
     expect(isNavigationActive("/inventory-copy", "/inventory")).toBe(false);
     expect(isNavigationActive("/dashboard", "/dashboard")).toBe(true);
   });
+
+  // @trace FR-13
+  it("does not mark a section active on an unrelated route", () => {
+    pathname.value = "/login";
+    expect(renderToStaticMarkup(<Navigation />)).not.toContain('aria-current="page"');
+  });
 });
 
 // @trace FR-13

@@ -1,0 +1,39 @@
+# yaml-language-server: $schema=https://coderabbit.ai/integrations/schema.v2.json
+
+# Встановлюємо основну мову рев'ю
+language: "uk-UA"
+
+# Додаткові інструкції для ШІ щодо тону та мови спілкування
+tone_instructions: "Ти Senior розробник. Усі відповіді, коментарі та опис PR пиши виключно українською мовою з професійною ІТ-термінологією. Будь ввічливим."
+
+reviews:
+  # Профіль рев'ю (може бути chill або assertive для суворішої перевірки)
+  profile: "assertive"
+
+  # Чи генерувати високорівневе резюме для Pull Request
+  high_level_summary: true
+
+  # Чи додавати вірші до рев'ю (вимикаємо для серйозного тону)
+  poem: true
+
+  # Налаштування автоматичного тригеру
+  auto_review:
+    enabled: true
+    # Визначаємо, чи перевіряти чернетки (Draft PR)
+    drafts: false
+    # Гілки, які підлягають автоматичній перевірці
+    base_branches:
+      - "main"
+      - "master"
+      - "develop"
+
+  path_filters:
+    - "app/**"         # Обов'язково перевіряти папку з додатком
+    - "components/**"  # Обов'язково перевіряти компоненти
+    - "!node_modules/**"
+    - "!dist/**"
+    - "!build/**"
+    - "!.git/**"
+    - "!package-lock.json"
+    - "!yarn.lock"
+    - "!**/*.md"       # ігнорувати всі файли документації (додано **, щоб ловити скрізь)

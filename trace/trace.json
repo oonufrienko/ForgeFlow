@@ -249,6 +249,7 @@
         "tests/navigation.test.tsx",
         "tests/navigation.test.tsx",
         "tests/navigation.test.tsx",
+        "tests/navigation.test.tsx",
         "tests/shell.test.tsx",
         "tests/shell.test.tsx"
       ],
@@ -527,6 +528,7 @@
       ],
       "planned": true,
       "tests": [
+        "tests/integration/repository.test.ts",
         "tests/integration/repository.test.ts",
         "tests/integration/repository.test.ts",
         "tests/integration/repository.test.ts"

@@ -20,7 +20,7 @@ Result: PASS, 19 warning(s)
 | FR-10 | yes | yes | 2 | yes |
 | FR-11 | yes | yes | 6 | yes |
 | FR-12 | yes | yes | 3 | - |
-| FR-13 | yes | yes | 5 | yes |
+| FR-13 | yes | yes | 6 | yes |
 | FR-14 | yes | yes | 6 | - |
 | FR-15 | yes | yes | 2 | - |
 | FR-16 | yes | yes | 3 | - |
@@ -40,7 +40,7 @@ Result: PASS, 19 warning(s)
 | FR-34 | yes | yes | 3 | - |
 | FR-35 | yes | yes | 4 | yes |
 | FR-36 | yes | yes | 1 | - |
-| FR-37 | yes | yes | 3 | - |
+| FR-37 | yes | yes | 4 | - |
 | FR-38 | yes | yes | 5 | - |
 | FR-39 | yes | yes | 4 | - |
 

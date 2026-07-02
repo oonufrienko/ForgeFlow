@@ -10,7 +10,7 @@
     "test:run": "vitest run",
     "test:integration": "vitest run tests/integration",
     "test:e2e": "playwright test",
-    "test:coverage": "vitest run --coverage",
+    "test:coverage": "vitest run --coverage --exclude tests/integration/** --exclude tests/e2e/**",
     "qa:verify": "node scripts/qa-verify.mjs",
     "qa:record-demos": "node scripts/record-demos.mjs",
     "qa:record-proof": "node scripts/record-demos.mjs",
@@ -30,6 +30,7 @@
     "zod": "^4.4.3"
   },
   "devDependencies": {
+    "@fission-ai/openspec": "^1.5.0",
     "@playwright/test": "^1.61.1",
     "@types/node": "^26.0.1",
     "@types/react": "^19.2.17",
