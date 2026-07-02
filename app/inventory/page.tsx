@@ -5,7 +5,7 @@ import { requireSession } from "@/lib/auth/session";
 import { readDatabase } from "@/lib/repository";
 import type { StockType } from "@/lib/types";
 
-const money = new Intl.NumberFormat("uk-UA", { style: "currency", currency: "USD" });
+const money = new Intl.NumberFormat("uk-UA", { style: "currency", currency: "UAH" });
 const stockTypes: Record<StockType, string> = { unrestricted: "Доступний", quality_inspection: "Контроль якості", blocked: "Заблокований" };
 
 export default async function Inventory({ searchParams }: { searchParams: Promise<{ success?: string; error?: string }> }) {

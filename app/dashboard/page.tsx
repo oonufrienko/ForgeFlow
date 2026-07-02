@@ -3,7 +3,7 @@ import { Shell } from "@/components/shell";
 import { dashboardMetrics, stockAlert, stockAlertClass } from "@/lib/dashboard";
 import { readDatabase } from "@/lib/repository";
 
-const money = new Intl.NumberFormat("uk-UA", { style: "currency", currency: "USD" });
+const money = new Intl.NumberFormat("uk-UA", { style: "currency", currency: "UAH" });
 
 export default async function Dashboard() {
   const data = await readDatabase();

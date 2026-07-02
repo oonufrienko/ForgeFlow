@@ -3,7 +3,7 @@ import { Feedback } from "@/components/feedback";
 import { createOrderAction, receiveOrderAction } from "@/lib/actions";
 import { readDatabase } from "@/lib/repository";
 
-const money = new Intl.NumberFormat("uk-UA", { style: "currency", currency: "USD" });
+const money = new Intl.NumberFormat("uk-UA", { style: "currency", currency: "UAH" });
 
 export default async function Procurement({ searchParams }: { searchParams: Promise<{ success?: string; error?: string }> }) {
   const data = await readDatabase();
