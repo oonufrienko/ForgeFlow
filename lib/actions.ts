@@ -5,6 +5,7 @@ import { z } from "zod";
 import { authenticate } from "./auth/core";
 import { clearSession, createSession, requireAdmin, requireSession } from "./auth/session";
 import { executeProduction } from "./manufacturing";
+import { addSupplier, updateMaterialSettings } from "./master-data";
 import { createOrder, receiveOrder } from "./procurement";
 import { readDatabase, transaction } from "./repository";
 
@@ -25,7 +26,7 @@ export async function createSupplierAction(form: FormData) {
   try {
     await requireAdmin();
     const value = z.object({ companyName: text, contactName: text, email: z.email(), phone: text, leadTimeDays: z.coerce.number().int().nonnegative(), rating: z.coerce.number().min(0).max(5) }).parse(Object.fromEntries(form));
-    await transaction((data) => { data.suppliers.push({ supplierId: `sup_${Date.now()}`, ...value }); return data; });
+    await transaction((data) => addSupplier(data, { supplierId: `sup_${Date.now()}`, ...value }));
   } catch (error) { go("/inventory", error instanceof Error ? error.message : "Не вдалося створити постачальника.", "error"); }
   revalidatePath("/inventory"); go("/inventory", "Постачальника додано.");
 }
@@ -33,7 +34,7 @@ export async function updateMaterialAction(form: FormData) {
   try {
     await requireAdmin();
     const value = z.object({ materialId: text, reorderLevel: z.coerce.number().nonnegative(), stockType: z.enum(["unrestricted", "quality_inspection", "blocked"]) }).parse(Object.fromEntries(form));
-    await transaction((data) => { const item = data.rawMaterials.find((m) => m.materialId === value.materialId); if (!item) throw new Error("Матеріал не знайдено."); Object.assign(item, value); return data; });
+    await transaction((data) => updateMaterialSettings(data, value.materialId, value.reorderLevel, value.stockType));
   } catch (error) { go("/inventory", error instanceof Error ? error.message : "Не вдалося оновити матеріал.", "error"); }
   revalidatePath("/inventory"); go("/inventory", "Налаштування матеріалу оновлено.");
 }

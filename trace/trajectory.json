@@ -4,7 +4,7 @@
     {
       "slice": "2026-07-02-add-dashboard-shell",
       "reviewEvidence": "clean",
-      "trailerCommits": 0,
+      "trailerCommits": 1,
       "libDomains": [],
       "processComplete": true
     },
@@ -47,10 +47,6 @@
   "overlaps": [],
   "failures": [],
   "warnings": [
-    {
-      "check": "trailer",
-      "msg": "2026-07-02-add-dashboard-shell: no commit carries a \"Slice: add-dashboard-shell\" trailer"
-    },
     {
       "check": "trailer",
       "msg": "2026-07-02-add-ledger-integration: no commit carries a \"Slice: add-ledger-integration\" trailer"
