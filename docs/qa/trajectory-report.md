@@ -6,7 +6,7 @@ It does NOT verify test-first ordering or test integrity (not derivable from
 one-commit-per-slice history) — those are graded by the trajectory-eval workflow.
 
 Scope: 6 archived slice(s).
-Result: PASS, 3 warning(s)
+Result: PASS, 2 warning(s)
 
 | Slice | Review evidence | Trailer commits | design+tasks | lib domains touched |
 |---|---|---|---|---|
@@ -15,7 +15,7 @@ Result: PASS, 3 warning(s)
 | 2026-07-02-add-ledger-integration | clean | **0** | yes | - |
 | 2026-07-02-add-manufacturing | clean | **0** | yes | - |
 | 2026-07-02-add-master-data | clean | 1 | yes | - |
-| 2026-07-02-add-procurement-receiving | clean | **0** | yes | - |
+| 2026-07-02-add-procurement-receiving | clean | 1 | yes | - |
 
 ## Cross-slice module overlap
 
@@ -29,4 +29,3 @@ None.
 
 - **trailer**: 2026-07-02-add-ledger-integration: no commit carries a "Slice: add-ledger-integration" trailer
 - **trailer**: 2026-07-02-add-manufacturing: no commit carries a "Slice: add-manufacturing" trailer
-- **trailer**: 2026-07-02-add-procurement-receiving: no commit carries a "Slice: add-procurement-receiving" trailer
