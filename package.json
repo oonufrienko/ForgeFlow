@@ -10,7 +10,7 @@
     "test:run": "vitest run",
     "test:integration": "vitest run tests/integration",
     "test:e2e": "playwright test",
-    "test:coverage": "vitest run --coverage --exclude tests/integration/**",
+    "test:coverage": "vitest run --coverage --exclude tests/integration/** --exclude tests/e2e/**",
     "qa:verify": "node scripts/qa-verify.mjs",
     "qa:record-demos": "node scripts/record-demos.mjs",
     "qa:record-proof": "node scripts/record-demos.mjs",
