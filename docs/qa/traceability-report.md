@@ -8,41 +8,41 @@ Result: PASS, 19 warning(s)
 
 | FR | Spec | Plan | Test trace | Recording |
 |---|---|---|---|---|
-| FR-1 | yes | yes | 2 | yes |
-| FR-2 | yes | yes | 1 | yes |
+| FR-1 | yes | yes | 3 | yes |
+| FR-2 | yes | yes | 2 | yes |
 | FR-3 | yes | yes | 1 | - |
-| FR-4 | yes | yes | 1 | - |
-| FR-5 | yes | yes | 1 | - |
-| FR-6 | yes | yes | 1 | - |
-| FR-7 | yes | yes | 1 | - |
+| FR-4 | yes | yes | 2 | - |
+| FR-5 | yes | yes | 2 | - |
+| FR-6 | yes | yes | 5 | - |
+| FR-7 | yes | yes | 2 | - |
 | FR-8 | yes | yes | 2 | yes |
-| FR-9 | yes | yes | 2 | yes |
+| FR-9 | yes | yes | 1 | yes |
 | FR-10 | yes | yes | 1 | yes |
-| FR-11 | yes | yes | 1 | yes |
-| FR-12 | yes | yes | 1 | - |
-| FR-13 | yes | yes | 1 | yes |
-| FR-14 | yes | yes | 1 | - |
-| FR-15 | yes | yes | 1 | - |
-| FR-16 | yes | yes | 1 | - |
-| FR-17 | yes | yes | 1 | - |
-| FR-18 | yes | yes | 1 | yes |
+| FR-11 | yes | yes | 6 | yes |
+| FR-12 | yes | yes | 3 | - |
+| FR-13 | yes | yes | 2 | yes |
+| FR-14 | yes | yes | 6 | - |
+| FR-15 | yes | yes | 2 | - |
+| FR-16 | yes | yes | 2 | - |
+| FR-17 | yes | yes | 2 | - |
+| FR-18 | yes | yes | 5 | yes |
 | FR-19 | yes | yes | 1 | yes |
 | FR-20 | yes | yes | 1 | yes |
-| FR-21 | yes | yes | 2 | - |
+| FR-21 | yes | yes | 7 | - |
 | FR-22 | yes | yes | 1 | yes |
 | FR-23 | yes | yes | 1 | yes |
-| FR-24 | yes | yes | 1 | yes |
-| FR-29 | yes | yes | 2 | yes |
-| FR-30 | yes | yes | 1 | yes |
-| FR-31 | yes | yes | 1 | - |
-| FR-32 | yes | yes | 1 | - |
+| FR-24 | yes | yes | 2 | yes |
+| FR-29 | yes | yes | 3 | yes |
+| FR-30 | yes | yes | 2 | yes |
+| FR-31 | yes | yes | 5 | - |
+| FR-32 | yes | yes | 2 | - |
 | FR-33 | yes | yes | 1 | - |
-| FR-34 | yes | yes | 1 | - |
-| FR-35 | yes | yes | 1 | yes |
+| FR-34 | yes | yes | 3 | - |
+| FR-35 | yes | yes | 4 | yes |
 | FR-36 | yes | yes | 1 | - |
-| FR-37 | yes | yes | 1 | - |
-| FR-38 | yes | yes | 1 | - |
-| FR-39 | yes | yes | 1 | - |
+| FR-37 | yes | yes | 3 | - |
+| FR-38 | yes | yes | 5 | - |
+| FR-39 | yes | yes | 4 | - |
 
 ## Failures
 

@@ -77,6 +77,7 @@
       "planned": true,
       "tests": [
         "tests/auth.test.ts",
+        "tests/auth.test.ts",
         "tests/auth.test.ts"
       ],
       "recordings": [
@@ -91,7 +92,8 @@
       ],
       "planned": true,
       "tests": [
-        "tests/domain.test.ts"
+        "tests/session.test.ts",
+        "tests/session.test.ts"
       ],
       "recordings": [
         "docs/qa/demo-recordings/manifest.json",
@@ -116,7 +118,8 @@
       ],
       "planned": true,
       "tests": [
-        "tests/domain.test.ts"
+        "tests/session.test.ts",
+        "tests/session.test.ts"
       ],
       "recordings": []
     },
@@ -127,7 +130,8 @@
       ],
       "planned": true,
       "tests": [
-        "tests/domain.test.ts"
+        "tests/session.test.ts",
+        "tests/session.test.ts"
       ],
       "recordings": []
     },
@@ -138,7 +142,11 @@
       ],
       "planned": true,
       "tests": [
-        "tests/auth.test.ts"
+        "tests/auth.test.ts",
+        "tests/auth.test.ts",
+        "tests/session.test.ts",
+        "tests/session.test.ts",
+        "tests/session.test.ts"
       ],
       "recordings": []
     },
@@ -149,7 +157,8 @@
       ],
       "planned": true,
       "tests": [
-        "tests/auth.test.ts"
+        "tests/auth.test.ts",
+        "tests/session.test.ts"
       ],
       "recordings": []
     },
@@ -160,8 +169,8 @@
       ],
       "planned": true,
       "tests": [
-        "tests/domain.test.ts",
-        "tests/domain.test.ts"
+        "tests/dashboard.test.ts",
+        "tests/dashboard.test.ts"
       ],
       "recordings": [
         "docs/qa/demo-recordings/manifest.json",
@@ -175,8 +184,7 @@
       ],
       "planned": true,
       "tests": [
-        "tests/domain.test.ts",
-        "evals/cases/sample.eval.ts"
+        "tests/dashboard.test.ts"
       ],
       "recordings": [
         "docs/qa/demo-recordings/manifest.json"
@@ -189,7 +197,7 @@
       ],
       "planned": true,
       "tests": [
-        "tests/domain.test.ts"
+        "tests/dashboard.test.ts"
       ],
       "recordings": [
         "docs/qa/demo-recordings/manifest.json"
@@ -202,7 +210,12 @@
       ],
       "planned": true,
       "tests": [
-        "tests/domain.test.ts"
+        "tests/dashboard.test.ts",
+        "tests/dashboard.test.ts",
+        "tests/dashboard.test.ts",
+        "tests/evals.test.ts",
+        "tests/evals.test.ts",
+        "evals/cases/operations.eval.ts"
       ],
       "recordings": [
         "docs/qa/demo-recordings/manifest.json",
@@ -216,7 +229,9 @@
       ],
       "planned": true,
       "tests": [
-        "tests/domain.test.ts"
+        "tests/dashboard.test.ts",
+        "tests/evals.test.ts",
+        "evals/cases/operations.eval.ts"
       ],
       "recordings": []
     },
@@ -227,7 +242,8 @@
       ],
       "planned": true,
       "tests": [
-        "tests/domain.test.ts"
+        "tests/shell.test.tsx",
+        "tests/shell.test.tsx"
       ],
       "recordings": [
         "docs/qa/demo-recordings/manifest.json",
@@ -241,7 +257,12 @@
       ],
       "planned": true,
       "tests": [
-        "tests/domain.test.ts"
+        "tests/evals.test.ts",
+        "tests/master-data.test.ts",
+        "tests/master-data.test.ts",
+        "tests/master-data.test.ts",
+        "tests/master-data.test.ts",
+        "evals/cases/operations.eval.ts"
       ],
       "recordings": []
     },
@@ -252,7 +273,8 @@
       ],
       "planned": true,
       "tests": [
-        "tests/domain.test.ts"
+        "tests/auth.test.ts",
+        "tests/session.test.ts"
       ],
       "recordings": []
     },
@@ -263,7 +285,8 @@
       ],
       "planned": true,
       "tests": [
-        "tests/domain.test.ts"
+        "tests/master-data.test.ts",
+        "tests/master-data.test.ts"
       ],
       "recordings": []
     },
@@ -274,7 +297,8 @@
       ],
       "planned": true,
       "tests": [
-        "tests/domain.test.ts"
+        "tests/master-data.test.ts",
+        "tests/master-data.test.ts"
       ],
       "recordings": []
     },
@@ -285,7 +309,11 @@
       ],
       "planned": true,
       "tests": [
-        "tests/domain.test.ts"
+        "tests/evals.test.ts",
+        "tests/procurement.test.ts",
+        "tests/procurement.test.ts",
+        "tests/procurement.test.ts",
+        "evals/cases/procurement.eval.ts"
       ],
       "recordings": [
         "docs/qa/extended-demo-recordings/manifest.json"
@@ -298,7 +326,7 @@
       ],
       "planned": true,
       "tests": [
-        "tests/domain.test.ts"
+        "tests/procurement.test.ts"
       ],
       "recordings": [
         "docs/qa/extended-demo-recordings/manifest.json"
@@ -311,7 +339,7 @@
       ],
       "planned": true,
       "tests": [
-        "tests/domain.test.ts"
+        "tests/procurement.test.ts"
       ],
       "recordings": [
         "docs/qa/demo-recordings/manifest.json",
@@ -325,8 +353,13 @@
       ],
       "planned": true,
       "tests": [
-        "tests/domain.test.ts",
-        "tests/domain.test.ts"
+        "tests/evals.test.ts",
+        "tests/procurement.test.ts",
+        "tests/procurement.test.ts",
+        "tests/procurement.test.ts",
+        "tests/procurement.test.ts",
+        "tests/procurement.test.ts",
+        "evals/cases/procurement.eval.ts"
       ],
       "recordings": []
     },
@@ -337,7 +370,7 @@
       ],
       "planned": true,
       "tests": [
-        "tests/domain.test.ts"
+        "tests/procurement.test.ts"
       ],
       "recordings": [
         "docs/qa/extended-demo-recordings/manifest.json"
@@ -350,7 +383,7 @@
       ],
       "planned": true,
       "tests": [
-        "tests/domain.test.ts"
+        "tests/procurement.test.ts"
       ],
       "recordings": [
         "docs/qa/extended-demo-recordings/manifest.json"
@@ -363,7 +396,8 @@
       ],
       "planned": true,
       "tests": [
-        "tests/domain.test.ts"
+        "tests/procurement.test.ts",
+        "tests/procurement.test.ts"
       ],
       "recordings": [
         "docs/qa/extended-demo-recordings/manifest.json"
@@ -376,8 +410,9 @@
       ],
       "planned": true,
       "tests": [
-        "tests/domain.test.ts",
-        "tests/domain.test.ts"
+        "tests/manufacturing.test.ts",
+        "tests/manufacturing.test.ts",
+        "tests/manufacturing.test.ts"
       ],
       "recordings": [
         "docs/qa/demo-recordings/manifest.json"
@@ -390,7 +425,8 @@
       ],
       "planned": true,
       "tests": [
-        "tests/domain.test.ts"
+        "tests/manufacturing.test.ts",
+        "tests/manufacturing.test.ts"
       ],
       "recordings": [
         "docs/qa/demo-recordings/manifest.json"
@@ -403,7 +439,11 @@
       ],
       "planned": true,
       "tests": [
-        "tests/domain.test.ts"
+        "tests/evals.test.ts",
+        "tests/manufacturing.test.ts",
+        "tests/manufacturing.test.ts",
+        "tests/manufacturing.test.ts",
+        "evals/cases/manufacturing.eval.ts"
       ],
       "recordings": []
     },
@@ -414,7 +454,8 @@
       ],
       "planned": true,
       "tests": [
-        "tests/domain.test.ts"
+        "tests/manufacturing.test.ts",
+        "tests/manufacturing.test.ts"
       ],
       "recordings": []
     },
@@ -425,7 +466,7 @@
       ],
       "planned": true,
       "tests": [
-        "tests/domain.test.ts"
+        "tests/manufacturing.test.ts"
       ],
       "recordings": []
     },
@@ -436,7 +477,9 @@
       ],
       "planned": true,
       "tests": [
-        "tests/domain.test.ts"
+        "tests/evals.test.ts",
+        "tests/manufacturing.test.ts",
+        "evals/cases/manufacturing.eval.ts"
       ],
       "recordings": []
     },
@@ -447,7 +490,10 @@
       ],
       "planned": true,
       "tests": [
-        "tests/domain.test.ts"
+        "tests/ledger.test.ts",
+        "tests/ledger.test.ts",
+        "tests/ledger.test.ts",
+        "tests/ledger.test.ts"
       ],
       "recordings": [
         "docs/qa/demo-recordings/manifest.json",
@@ -461,7 +507,7 @@
       ],
       "planned": true,
       "tests": [
-        "tests/domain.test.ts"
+        "tests/ledger.test.ts"
       ],
       "recordings": []
     },
@@ -472,7 +518,9 @@
       ],
       "planned": true,
       "tests": [
-        "tests/domain.test.ts"
+        "tests/integration/repository.test.ts",
+        "tests/integration/repository.test.ts",
+        "tests/integration/repository.test.ts"
       ],
       "recordings": []
     },
@@ -483,7 +531,11 @@
       ],
       "planned": true,
       "tests": [
-        "tests/domain.test.ts"
+        "tests/integration/repository.test.ts",
+        "tests/integration/repository.test.ts",
+        "tests/integration/repository.test.ts",
+        "tests/master-data.test.ts",
+        "tests/procurement.test.ts"
       ],
       "recordings": []
     },
@@ -494,7 +546,10 @@
       ],
       "planned": true,
       "tests": [
-        "tests/domain.test.ts"
+        "tests/evals.test.ts",
+        "tests/master-data.test.ts",
+        "tests/procurement.test.ts",
+        "evals/cases/procurement.eval.ts"
       ],
       "recordings": []
     }

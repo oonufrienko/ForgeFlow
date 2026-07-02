@@ -1,12 +1,75 @@
 {
   "generatedBy": "scripts/check-trajectory.mjs",
-  "slices": [],
+  "slices": [
+    {
+      "slice": "2026-07-02-add-dashboard-shell",
+      "reviewEvidence": "clean",
+      "trailerCommits": 0,
+      "libDomains": [],
+      "processComplete": true
+    },
+    {
+      "slice": "2026-07-02-add-foundation-auth-persistence",
+      "reviewEvidence": "clean",
+      "trailerCommits": 0,
+      "libDomains": [],
+      "processComplete": true
+    },
+    {
+      "slice": "2026-07-02-add-ledger-integration",
+      "reviewEvidence": "clean",
+      "trailerCommits": 0,
+      "libDomains": [],
+      "processComplete": true
+    },
+    {
+      "slice": "2026-07-02-add-manufacturing",
+      "reviewEvidence": "clean",
+      "trailerCommits": 0,
+      "libDomains": [],
+      "processComplete": true
+    },
+    {
+      "slice": "2026-07-02-add-master-data",
+      "reviewEvidence": "clean",
+      "trailerCommits": 0,
+      "libDomains": [],
+      "processComplete": true
+    },
+    {
+      "slice": "2026-07-02-add-procurement-receiving",
+      "reviewEvidence": "clean",
+      "trailerCommits": 0,
+      "libDomains": [],
+      "processComplete": true
+    }
+  ],
   "overlaps": [],
   "failures": [],
   "warnings": [
     {
-      "check": "slices",
-      "msg": "no archived slices found under openspec/changes/archive/ (nothing to audit yet)"
+      "check": "trailer",
+      "msg": "2026-07-02-add-dashboard-shell: no commit carries a \"Slice: add-dashboard-shell\" trailer"
+    },
+    {
+      "check": "trailer",
+      "msg": "2026-07-02-add-foundation-auth-persistence: no commit carries a \"Slice: add-foundation-auth-persistence\" trailer"
+    },
+    {
+      "check": "trailer",
+      "msg": "2026-07-02-add-ledger-integration: no commit carries a \"Slice: add-ledger-integration\" trailer"
+    },
+    {
+      "check": "trailer",
+      "msg": "2026-07-02-add-manufacturing: no commit carries a \"Slice: add-manufacturing\" trailer"
+    },
+    {
+      "check": "trailer",
+      "msg": "2026-07-02-add-master-data: no commit carries a \"Slice: add-master-data\" trailer"
+    },
+    {
+      "check": "trailer",
+      "msg": "2026-07-02-add-procurement-receiving: no commit carries a \"Slice: add-procurement-receiving\" trailer"
     }
   ]
 }

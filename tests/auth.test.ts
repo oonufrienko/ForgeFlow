@@ -9,9 +9,18 @@ describe("authentication policy", () => {
     expect(authenticate(seedData.users, "test", "wrong")).toBeNull();
   });
 
+  // @trace FR-6 FR-7 FR-15
   it("restricts master data to admins", () => {
     expect(canManageMasterData("Адміністратор")).toBe(true);
     expect(canManageMasterData("Працівник")).toBe(false);
+  });
+
+  // @trace FR-1 FR-3
+  it("rejects inactive users without exposing whether the account exists", () => {
+    const users = structuredClone(seedData.users);
+    users[0].isActive = false;
+    expect(authenticate(users, "test", "test")).toBeNull();
+    expect(authenticate(users, "missing", "test")).toBeNull();
   });
 });
 
@@ -19,3 +28,4 @@ describe("authentication policy", () => {
 // @trace FR-3
 // @trace FR-6
 // @trace FR-7
+// @trace FR-15
